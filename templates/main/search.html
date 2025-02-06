@@ -1,0 +1,102 @@
+{% extends "includes/base.html" %}
+{% load static %}
+{% block body %}
+
+<section style="padding-top: 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 d-none d-lg-block">
+                <!-- FORM FILTER -->
+                {% include "course/components/filter_col.html" %}
+                <!-- END FORM FILTER -->
+                <!-- ARCHIVE CATEGORY -->
+                {% include "course/components/filter_category.html" %}
+                <!-- End ARCHIVE CATEGORY -->
+
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tabs__custom-v2 ">
+
+                            <div class="d-block d-lg-none">
+                                <ul class="nav nav-pills myTab mb-4 " role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active pills-tab-one" data-toggle="pill" href="#pills-tab-one"
+                                            role="tab" aria-controls="pills-tab-one" aria-selected="true">
+                                            Description
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link pills-tab-two" data-toggle="pill" href="#pills-tab-two" role="tab"
+                                            aria-controls="pills-tab-two" aria-selected="false">
+                                            Listing</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- FILTER VERTICAL -->
+                            
+
+
+
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="pills-tab-one" role="tabpanel"
+                                    aria-labelledby="pills-tab-one">
+                                    
+{#                                    <ul class="nav nav-pills mt-0">#}
+{#                                        <li class="list-inline-item mr-auto">#}
+{#                                            <span class="title-text" style="color: #013565;">Sort by</span>#}
+{#                                            <div class="btn-group">#}
+{#                                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"#}
+{#                                                    aria-haspopup="true" aria-expanded="false">#}
+{#                                                    Based Properties#}
+{#                                                </a>#}
+{#                                                <div class="dropdown-menu">#}
+{#                                                    <a class="dropdown-item" href="javascript:void(0)">Low to High Price</a>#}
+{#                                                    <a class="dropdown-item" href="javascript:void(0)">High to Low Price#}
+{#                                                    </a>#}
+{#                                                    <a class="dropdown-item" href="javascript:void(0)">Sell Properties</a>#}
+{#        #}
+{#                                                    <a class="dropdown-item" href="javascript:void(0)">Rent Properties</a>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                        </li>#}
+{#                                        #}
+{#                                    </ul>#}
+
+                                    <div class="row">
+                                    {% if course_list %}
+                                        {% for course in course_list %}
+                                        {% include "course/components/card2.html" %}
+                                        {% endfor %}
+                                    {% else %}
+                                    <div class="alert alert-danger w-100">No search result found</div>
+                                    {% endif %}
+
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="tab-pane fade " id="pills-tab-two" role="tabpanel"
+                                    aria-labelledby="pills-tab-two">
+
+                                    {% include "course/components/filter_col.html" %}
+
+                                    {% include "course/components/filter_category.html" %}
+                                    
+                                    <div class="cleafix"></div>
+                                </div>
+
+
+                            </div>
+                            <!-- END FILTER VERTICAL -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

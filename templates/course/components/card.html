@@ -1,0 +1,34 @@
+{% load static %}
+{% load custom_tags %}
+<a class="item text-decoration-none" href="{% url "course:details" course.slug %}">
+    <div class="card__image card__box">
+        <div class="card__image-header h-250">
+            <div class="ribbon text-capitalize bg-danger">featured</div>
+            <img src="{{ course.image.url }}" alt="" class="img-fluid w100 img-transition">
+            {% comment %} <div class="info"> for sale</div> {% endcomment %}
+        </div>
+        <div class="card__image-body">
+            <div class="flex justify-between items-center">
+                <span class="badge bg-logo2 text-capitalize mb-2">{{ course.category }}</span>
+                <div class="list-inline my-auto ml-auto">${{ course.price }}</div>
+            </div>
+            <h6 class="text-capitalize">
+                {{ course.name }}
+            </h6>
+
+            <p class="text-capitalize">
+                {{ course.description }}
+            </p>
+            <ul class="list-inline card__content">
+                {% for keyword in course|get_keywords %}
+                <li class="list-inline-item">
+                    <span>
+                       {{ keyword }}
+                    </span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    
+</a>

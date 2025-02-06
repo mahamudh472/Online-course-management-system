@@ -1,0 +1,61 @@
+{% extends 'includes/base.html' %}
+{% load static %}
+{% block body %}
+    <div class="clearfix"></div>
+
+    <!-- LISTING LIST -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Form Login -->
+                    <div class="card mx-auto" style="max-width: 380px;">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Sign in</h4>
+                            <form action="{% url 'account:login' %}" method="post">
+                                {% csrf_token %}
+                                <a href="#" class="btn btn-facebook btn-block mb-2 text-white"> <i
+                                        class="fa fa-facebook"></i> &nbsp; Sign
+                                    in
+                                    with
+                                    Facebook</a>
+                                <a href="#" class="btn btn-primary btn-block mb-4"
+                                   style="background-color: rgba(1, 53, 101, 0.9);"> <i class="fa fa-google"></i> &nbsp;
+                                    Sign in with
+                                    Google</a>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Username" name="username" type="text">
+                                </div> <!-- form-group// -->
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password">
+                                </div> <!-- form-group// -->
+
+                                <div class="form-group">
+                                    <a href="#" class="float-right text-danger">Forgot password?</a>
+                                    <label class="float-left custom-control custom-checkbox"> <input type="checkbox"
+                                                                                                     class="custom-control-input"
+                                                                                                     checked="" ;>
+                                        <span class="custom-control-label"> Remember </span>
+                                    </label>
+                                </div> <!-- form-group form-check .// -->
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary bg-mybtn btn-block"> Login</button>
+                                </div> <!-- form-group// -->
+                                {% if messages %}
+                                    {% for message in messages %}
+                                        <div class="alert alert-danger">{{ message }}</div>
+                                    {% endfor %}
+                                {% endif %}
+                            </form>
+                        </div> <!-- card-body.// -->
+                    </div> <!-- card .// -->
+
+                    <p class="text-center mt-4">Don't have account? <a href="{% url 'account:register' %}">Sign up</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END LISTING LIST -->
+
+{% endblock %}

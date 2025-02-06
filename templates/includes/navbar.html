@@ -1,0 +1,105 @@
+{% load static %}
+
+<!-- NAVBAR TOP -->
+<div class="topbar bg-topnav d-none d-sm-block">
+    <div class="container ">
+        <div class="row">
+            <div class="col-sm-12 col-md-5">
+                <div class="topbar-left">
+                    <div class="topbar-text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-7">
+                <div class="list-unstyled topbar-right">
+                    
+                    <ul class="topbar-link">
+                        {% if request.user.is_authenticated %}
+                        <li><a href="{% url 'account:logout' %}" title="">Logout</a></li>
+                        {% else %}
+                        <li><a href="{% url 'account:login' %}" title="">Login</a></li>
+                        <li><a href="{% url 'account:register' %}" title="">Register</a></li>
+                        {% endif %}
+                        <li>
+                            <select class="lang-drop">
+                                <option> <img src="https://static.wikia.nocookie.net/earthmc2820/images/5/55/Bangladesh-flag.gif/revision/latest?cb=20200403174459" style="width: 22px; padding-right: 12px;"> English</option>
+                                <option>German</option>
+                                <option>French</option>
+                                <option>Greek</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- END NAVBAR TOP -->
+<nav class="navbar navbar-nav navbar-hover navbar-expand-lg navbar-soft">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'main:home' %}">
+            <img src="{% static 'images/logo-black2.png' %}" alt="logo" class="img-fluid" style="width: 270px;">
+        </a>
+        <button class="navbar-toggler rightNav" type="button" data-toggle="collapse" data-target="#main_nav99">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav99">
+            <ul class="navbar-nav  mx-auto">
+                <li class="nav-item dropdown" align="right">
+                    <a class="nav-link active dropdown-toggle" href="{% url 'main:home' %}" data-toggle="dropdown"> Home </a>
+                    <ul class="dropdown-menu dropdown-menu-left animate fade-up" align="right">
+                        <li align="right"><a class="dropdown-item" href="{% url 'account:login' %}">Login</a>
+                        </li>
+                        <li align="right"><a class="dropdown-item" href="{% url 'account:register' %}">Register</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown" align="right">
+                    <a class="nav-link active" href="listing.html"> LISTINGS </a>
+                </li>
+
+                <li class="nav-item dropdown" align="right">
+                    <a class="nav-link active" href="blog.html"> Blog </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="./contact.html" align="right"> contact </a></li>
+                <li class="nav-item"><a class="nav-link" href="./about-us.html" align="right"> about </a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'account:profile' %}" align="right"> Profile </a></li>
+            </ul>
+
+
+            <!-- Search bar.// -->
+            <ul class="navbar-nav" align="right">
+                <li>
+                    <a href="add-property.html" class="btn btn-danger text-capitalize">
+                        <i class="fa fa-plus-circle mr-1"></i> add listing</a>
+                </li>
+            </ul>
+
+            <!-- Search content bar.// -->
+            <div class="top-search navigation-shadow">
+                <div class="container">
+                    <div class="input-group ">
+                        <form action="#">
+
+                            <div class="row no-gutters mt-3">
+                                <div class="col">
+                                    <input class="form-control border-secondary border-right-0 rounded-0"
+                                        type="search" value="" placeholder="Search " id="example-search-input4">
+                                </div>
+                                <div class="col-auto">
+                                    <a class="btn btn-outline-secondary border-left-0 rounded-0 rounded-right"
+                                        href="/search-result.html">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Search content bar.// -->
+        </div> <!-- navbar-collapse.// -->
+    </div>
+</nav>

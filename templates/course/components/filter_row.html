@@ -1,0 +1,49 @@
+<div class="search__area bg-light">
+    <form action="{% url 'main:search' %}" method="get">
+        <div class="container">
+            <div class="search__area-inner">
+                <div class="row">
+                    <div class="col-6 col-lg-3 col-md-3">
+                        <div class="form-group">
+                            <select class="wide select_option" name="category" id="category">
+                                <option selected disabled>Category</option>
+                                {% for category in categories %}
+                                    <option value="{{ category.name }}">{{ category.name }}</option>
+                                {% endfor %}
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-3">
+                        <div class="form-group">
+                            <select class="wide select_option" name="sub_category">
+                                <option selected disabled>Sub Category</option>
+                                {% for category in sub_categories %}
+                                    <option value="{{ category.name }}">{{ category.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-3">
+                        <div class="form-group">
+                            <input type="text" name="q" class="w-100 px-2"
+                                   style="line-height: 42px; border: 1px solid #e8e8e8;">
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-outline-blue text-uppercase btn-block" type="submit">
+                                search <i
+                                    class="fa fa-search ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</div>

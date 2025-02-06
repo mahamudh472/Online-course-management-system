@@ -1,0 +1,41 @@
+{% load static %}
+{% load custom_tags %}
+<div class="col-lg-12">
+    <div class="card__image card__box-v1" onclick="location.href=`{% url "course:details" course.slug %}`">
+        <div class="row no-gutters">
+            <div class="col-md-5">
+                <div class="card__image__header h-250">
+                    <div class="ribbon text-capitalize">sold out</div>
+                    <img src="{{ course.image.url }}" alt=""
+                        class="img-fluid w100 img-transition">
+                    <div class="info" style="background-color: #db0000;"> for sale</div>
+                    
+                </div>
+            </div>
+            <div class="col-md-7 my-auto">
+                <div class="card__image__body">
+                    <span class="badge badge-primary bg-mycolor text-capitalize mb-2">{{ course.category.name }}</span>
+                    <h6>
+                        <a href="#">{{ course.name }}</a>
+                    </h6>
+                    <div class="card__image__body-desc">
+                        <p class="text-capitalize">
+                           {{ course.description }}
+                        </p>
+                    </div>
+
+                    <ul class="list-inline card__content">
+                        {% for keyword in course|get_keywords %}
+                        <li class="list-inline-item">
+                            <span class="text-uppercase" style="color: #db0000">
+                                {{ keyword }}
+                            </span>
+                        </li>
+                        {% endfor %}
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

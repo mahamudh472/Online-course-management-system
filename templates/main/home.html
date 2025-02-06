@@ -1,0 +1,533 @@
+{% extends "includes/base.html" %}
+{% load static %}
+{% block body %}
+
+
+
+
+    <!-- CAROUSEL HOMEPAGE -->
+    <div class="homepage__property bg-light">
+        <div class="homepage__property-carousel owl-carousel owl-theme">
+            <div class="item">
+                <a href="#">
+                    <div class="tc-image-caption4">
+                        <img src="{% static 'images/c2.png' %}" alt="img1">
+                        <div class="caption">
+                            <h6 class="text-uppercase text-white">walls property</h6>
+                            <h2 class="text-capitalize">family house</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, assumenda!</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="tc-image-caption4">
+                        <img src="{% static 'images/c3.png' %}" alt="img1">
+                        <div class="caption">
+                            <h6 class="text-uppercase text-white">walls property</h6>
+                            <h2 class="text-capitalize">Small family house</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, assumenda!</p>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="tc-image-caption4">
+                        <img src="{% static 'images/logo-slider.jpg' %}" alt="img1">
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="tc-image-caption4">
+                        <img src="{% static 'images/c4.png' %}" alt="img1">
+                        <div class="caption">
+                            <h6 class="text-uppercase text-white">walls property</h6>
+                            <h2 class="text-capitalize">Big family house</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, assumenda!</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="tc-image-caption4">
+                        <img src="{% static 'images/c6.png' %}" alt="img1">
+                        <div class="caption">
+                            <h6 class="text-uppercase text-white">walls property</h6>
+                            <h2 class="text-capitalize">family house</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, assumenda!</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="tc-image-caption4">
+                        <img src="{% static 'images/c7.png' %}" alt="img1">
+                        <div class="caption">
+                            <h6 class="text-uppercase text-white">walls property</h6>
+                            <h2 class="text-capitalize">family house</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, assumenda!</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="tc-image-caption4">
+                        <img src="{% static 'images/c8.png' %}" alt="img1">
+                        <div class="caption">
+                            <h6 class="text-uppercase text-white">Condo Sale!</h6>
+                            <h2 class="text-capitalize">family Condo</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, assumenda!</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- END CAROUSEL HOMEPAGE -->
+    <div class="clearfix"></div>
+
+    <!-- FILTER SEARCH -->
+    {% include "course/components/filter_row.html" %}
+
+    <!-- POPULAR CITY -->
+    <section class="popular__city-large">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 mx-auto">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize text-danger">
+                            Our Services
+                        </h2>
+                        <p class="text-center text-capitalize">Choose your best need in your city.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <!-- CARD IMAGE -->
+                    <div class="myCard">
+                        <div class="iconDiv">
+                            <i class="fa fa-comments-o myIcon" aria-hidden="true"></i>
+                        </div>
+                        <h6 class="text-capitalize mb-4">Consulting Services</h6>
+                        <p class="text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <!-- CARD IMAGE -->
+                    <div class="myCard">
+                        <div class="iconDiv">
+                            <i class="fa fa-building-o myIcon" aria-hidden="true"></i>
+                        </div>
+                        <h6 class="text-capitalize mb-4">Propery Management</h6>
+                        <p class="text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <!-- CARD IMAGE -->
+                    <div class="myCard">
+                        <div class="iconDiv">
+                            <i class="fa fa-handshake-o myIcon" aria-hidden="true"></i>
+                        </div>
+                        <h6 class="text-capitalize mb-4">Renting & Selling</h6>
+                        <p class="text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END POPULAR CITY -->
+
+    <!-- FEATURED PROPERTIES -->
+    <section class="featured__property bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 mx-auto">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize text-danger">
+                            featured properties
+                        </h2>
+                        <p class="text-center text-capitalize">handpicked exclusive properties by our team.</p>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="featured__property-carousel owl-carousel owl-theme">
+                        {% for course in course_list %}
+                        {% include "course/components/card.html" %}
+                        {% endfor %}
+                   
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END FEATURED PROPERTIES -->
+
+
+
+    <!-- ABOUT -->
+    <section class="home__about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="title__leading">
+                        <!-- <h6 class="text-uppercase">trusted By thousands</h6> -->
+                        <h2 class="text-capitalize text-danger">why choose use?</h2>
+                        <p>
+                            The first step in selling your property is to get a valuation from local experts. They will
+                            inspect your home and take into account its unique features, the area and market conditions
+                            before providing you with the most accurate valuation.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="about-us.html" class="btn btn-primary btn-outline-blue mt-3 text-capitalize"> read more
+                            <i class="fa fa-angle-right ml-3 "></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__image">
+                        <div class="about__image-top">
+                            <div class="about__image-top-hover">
+                                <img src="{% static 'images/about2.png' %}" alt="" class="img-fluid">
+                            </div>
+
+                        </div>
+                        <div class="about__image-bottom">
+                            <div class="about__image-bottom-hover">
+                                <img src="{% static 'images/about1.png' %}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT -->
+
+    <section class="projects__partner bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize text-danger">our partners</h2>
+                        <p class="text-center text-capitalize">Brand Partners Successful Projects Trusted Many Clients
+                            Real Estate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="projects__partner-logo">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo6.png' %}" alt="" class="img-fluid">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo7.png' %}" alt="" class="img-fluid">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo8.png' %}" alt="" class="img-fluid">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo1.png' %}" alt="" class="img-fluid">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo5.png' %}" alt="" class="img-fluid">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TESTIMONIAL -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 mx-auto">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize text-danger">
+                            what people says
+                        </h2>
+                        <p class="text-center text-capitalize">people says about walls property.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="testimonial owl-carousel owl-theme">
+                <!-- TESTIMONIAL -->
+                <div class="item testimonial__block">
+                    <div class="testimonial__block-card bg-reviews">
+                        <p>
+                            Thank you walls property help me, choice dream home We were impressed with the build
+                            quality, Plus they are competitively priced.
+                        </p>
+                    </div>
+                    <div class="testimonial__block-users">
+                        <div class="testimonial__block-users-img">
+                            <img src="{% static 'images/p1.png' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="testimonial__block-users-name" style="color: #013565;">
+                            jhon doe <br>
+                            <span>owner, digital agency</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TESTIMONIAL -->
+                <!-- TESTIMONIAL -->
+                <div class="item testimonial__block">
+                    <div class="testimonial__block-card bg-reviews">
+                        <p>
+                            Thank you walls property help me, choice dream home We were impressed with the build
+                            quality, Plus they are competitively priced.
+                        </p>
+                    </div>
+                    <div class="testimonial__block-users">
+                        <div class="testimonial__block-users-img">
+                            <img src="{% static 'images/p2.png' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="testimonial__block-users-name" style="color: #013565;">
+                            jhon doe <br>
+                            <span>owner, digital agency</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TESTIMONIAL -->
+                <!-- TESTIMONIAL -->
+                <div class="item testimonial__block">
+                    <div class="testimonial__block-card bg-reviews">
+                        <p>
+                            Thank you walls property help me, choice dream home We were impressed with the build
+                            quality, Plus they are competitively priced.
+                        </p>
+                    </div>
+                    <div class="testimonial__block-users">
+                        <div class="testimonial__block-users-img">
+                            <img src="{% static 'images/p3.png' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="testimonial__block-users-name" style="color: #013565;">
+                            jhon doe <br>
+                            <span>owner, digital agency</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TESTIMONIAL -->
+                <!-- TESTIMONIAL -->
+                <div class="item testimonial__block">
+                    <div class="testimonial__block-card bg-reviews">
+                        <p>
+                            Thank you walls property help me, choice dream home We were impressed with the build
+                            quality, Plus they are competitively priced.
+                        </p>
+                    </div>
+                    <div class="testimonial__block-users">
+                        <div class="testimonial__block-users-img">
+                            <img src="{% static 'images/p4.png' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="testimonial__block-users-name" style="color: #013565;">
+                            jhon doe <br>
+                            <span>owner, digital agency</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TESTIMONIAL -->
+                <!-- TESTIMONIAL -->
+                <div class="item testimonial__block">
+                    <div class="testimonial__block-card bg-reviews">
+                        <p>
+                            Thank you walls property help me, choice dream home We were impressed with the build
+                            quality, Plus they are competitively priced.
+                        </p>
+                    </div>
+                    <div class="testimonial__block-users">
+                        <div class="testimonial__block-users-img">
+                            <img src="{% static 'images/p5.png' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="testimonial__block-users-name" style="color: #013565;">
+                            jhon doe <br>
+                            <span>owner, digital agency</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TESTIMONIAL -->
+
+            </div>
+        </div>
+    </section>
+    <!-- END TESTIMONIAL -->
+
+
+    <!-- BLOG -->
+    <section class="blog__home bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 mx-auto">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize text-danger">
+                            lastest news
+                        </h2>
+                        <p class="text-center text-capitalize">Find Of The Most Popular Real Estate Company All Around
+                            Indonesia.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- BLOG  -->
+                    <div class="card__image">
+                        <div class="card__image-header h-250">
+                            <img src="{% static 'images/news1.png' %}" alt="" class="img-fluid w100 img-transition">
+                            <div class="info"> event</div>
+                        </div>
+                        <div class="card__image-body">
+                            <!-- <span class="badge badge-secondary p-1 text-capitalize mb-3">May 08, 2019 </span> -->
+                            <h6 class="text-capitalize">
+                                <a href="/blog-single.html">Best Interior Oppertunity </a>
+                            </h6>
+                            <p class=" mb-0">
+                                Real estate festival is one of the famous feval for explain to you how all this mistaolt
+                                deand praising pain
+                                wasnad I will give complete
+
+                            </p>
+
+
+                        </div>
+                        <div class="card__image-footer">
+                            <figure>
+                                <img src="{% static 'images/p2.png' %}" alt="" class="img-fluid rounded-circle">
+                            </figure>
+                            <ul class="list-inline my-auto">
+                                <li class="list-inline-item ">
+                                    <a href="#">
+                                        tom wilson
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                            <ul class="list-inline my-auto ml-auto">
+                                <li class="list-inline-item ">
+                                    <a href="/blog-single.html" class="btn btn-sm btn-primary bg-logo2"><small
+                                            class="text-white ">read more <i
+                                                class="fa fa-angle-right ml-1"></i></small></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END BLOG -->
+                </div>
+                <div class="col-md-4">
+                    <!-- BLOG  -->
+                    <div class="card__image">
+                        <div class="card__image-header h-250">
+                            <img src="{% static 'images/news2.png' %}" alt="" class="img-fluid w100 img-transition">
+                            <div class="info"> Top News</div>
+                        </div>
+                        <div class="card__image-body">
+                            <!-- <span class="badge badge-secondary p-1 text-capitalize mb-3">May 08, 2019 </span> -->
+                            <h6 class="text-capitalize">
+                                <a href="#">Tips & Trick buy real estate </a>
+                            </h6>
+                            <p class=" mb-0">
+                                Real estate festival is one of the famous feval for explain to you how all this mistaolt
+                                deand praising pain
+                                wasnad I will give complete
+
+                            </p>
+
+
+                        </div>
+                        <div class="card__image-footer">
+                            <figure>
+                                <img src="{% static 'images/p4.png' %}" alt="" class="img-fluid rounded-circle">
+                            </figure>
+                            <ul class="list-inline my-auto">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        tom wilson
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                            <ul class="list-inline my-auto ml-auto">
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn btn-sm btn-primary bg-logo2"><small class="text-white ">read more <i
+                                                class="fa fa-angle-right ml-1"></i></small></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END BLOG -->
+                </div>
+                <div class="col-md-4">
+                    <!-- BLOG  -->
+                    <div class="card__image">
+                        <div class="card__image-header h-250">
+                            <img src="{% static 'images/news3.png' %}" alt="" class="img-fluid w100 img-transition">
+                            <div class="info"> event</div>
+                        </div>
+                        <div class="card__image-body">
+                            <!-- <span class="badge badge-secondary p-1 text-capitalize mb-3">May 08, 2019 </span> -->
+                            <h6 class="text-capitalize">
+                                <a href="#">Our Must Popular Deluxe House </a>
+                            </h6>
+                            <p class=" mb-0">
+                                Real estate festival is one of the famous feval for explain to you how all this mistaolt
+                                deand praising pain
+                                wasnad I will give complete
+                            </p>
+                        </div>
+                        <div class="card__image-footer">
+                            <figure>
+                                <img src="{% static 'images/p6.png' %}" alt="" class="img-fluid rounded-circle">
+                            </figure>
+                            <ul class="list-inline  my-auto">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        tom wilson
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="list-inline  my-auto ml-auto">
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn btn-sm btn-primary bg-logo2"><small class="text-white">read more <i
+                                                class="fa fa-angle-right ml-1"></i></small></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END BLOG -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END BLOG -->
+
+
+{% endblock %}

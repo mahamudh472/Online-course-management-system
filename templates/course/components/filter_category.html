@@ -1,0 +1,19 @@
+<div class=" wrapper__list__category">
+    <!-- CATEGORY -->
+    <div class="widget widget__archive">
+        <div class="widget__title">
+            <h5 class="text-dark mb-0 text-center">Categories Property</h5>
+        </div>
+        <ul class="list-unstyled">
+            {% for category in categories %}
+            <li>
+                <a href="#" class="text-capitalize">
+                    {{ category.name }}
+                    <span class="badge badge-primary bg-mycolor bg-mycolor">{{ category.course_set.count }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <!-- END CATEGORY -->
+</div>
